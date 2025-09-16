@@ -1,0 +1,36 @@
+set PATH=%PATH%;C:\Windows\System32;C:\Windows;C:\Program Files\Git\cmd;C:\src\flutter\bin
+where where.exe
+"%ProgramFiles%\Git\cmd\git.exe" --version
+dir C:\src\flutter\bin\flutter.bat
+dir C:\ /s /b flutter.bat 2>nul
+CLS
+move "%USERPROFILE%\Desktop\flutter_windows_3.35.2-stable" C:\src\flutter
+dir "%USERPROFILE%\Desktop\flutter_windows_3.35.2-stable\flutter\bin\flutter.bat"
+"%USERPROFILE%\Desktop\flutter_windows_3.35.2-stable\flutter\bin\flutter.bat" --version
+"%USERPROFILE%\Desktop\flutter_windows_3.35.2-stable\flutter\bin\flutter.bat" config --enable-web
+"%USERPROFILE%\Desktop\flutter_windows_3.35.2-stable\flutter\bin\flutter.bat" precache --web
+"%USERPROFILE%\Desktop\flutter_windows_3.35.2-stable\flutter\bin\flutter.bat" devices
+cd /d "C:\Users\papar_000\Desktop\serenityai_refactored"
+"%USERPROFILE%\Desktop\flutter_windows_3.35.2-stable\flutter\bin\flutter.bat" doctor
+"%USERPROFILE%\Desktop\flutter_windows_3.35.2-stable\flutter\bin\flutter.bat" pub get
+"%USERPROFILE%\Desktop\flutter_windows_3.35.2-stable\flutter\bin\flutter.bat" build web --dart-define=SUPABASE_URL=https://sdoquvgajxbzpoxozzrp.supabase.co --dart-define=SUPABASE_ANON_KEY=/yVfVCGDHwOlgfkKF2UoXwRgquzIf5AIvNe/EO7wCAFapch81YIwDRXKPuUXABKLT1q9MGDfPg/D1MjKCXCwaA==
+notepad pubspec.yaml
+"%USERPROFILE%\Desktop\flutter_windows_3.35.2-stable\flutter\bin\flutter.bat" pub get
+doskey /history > session_log.txt
+dir /s /b pubspec.yaml
+flutter clean
+flutter pub get
+flutter build web
+flutter clean
+flutter pub get
+flutter build web --release
+flutter clean
+flutter pub get
+flutter build web --release
+flutter clean
+cd C:\Users\papar_000\Desktop\serenityai_refactored
+flutter clean
+flutter pub get
+flutter build web --release
+dir
+doskey /history > session_log.txt
