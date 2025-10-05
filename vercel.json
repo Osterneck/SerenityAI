@@ -1,3 +1,1 @@
-{
-  "buildCommand": "echo 'No build needed'"
-}
+{ "buildCommand": "flutter build web", "outputDirectory": "build/web", "framework": "none" } 
