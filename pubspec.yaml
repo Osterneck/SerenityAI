@@ -1,0 +1,41 @@
+name: serenityai
+description: An AI-powered meditation and wellness application
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.2.0 <4.0.0"
+  flutter: ">=3.16.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  provider: ^6.1.2
+  http: ^1.2.2
+  shared_preferences: ^2.2.3
+  path_provider: ^2.1.5
+  intl: ^0.19.0
+  google_fonts: ^6.2.1
+  sizer: ^2.0.15
+  permission_handler: any
+  connectivity_plus: ^6.0.3
+  record: ^5.0.4
+  record_web: ^1.0.2
+  universal_html: ^2.2.4
+
+  # Firebase dependencies (Web + Mobile support)
+  firebase_core: ^3.6.0
+  firebase_storage: ^12.3.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/audio/
+    
