@@ -1,1 +1,6 @@
-{ "buildCommand": "flutter build web", "outputDirectory": "build/web", "framework": "none" } 
+{
+  "buildCommand": "flutter build web",
+  "outputDirectory": "build/web",
+  "framework": null
+}
+
